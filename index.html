@@ -1,6 +1,123 @@
-<html>
-  <h1>Nicole's Portfolio</h1>
-  <img
-    src="https://media-exp1.licdn.com/dms/image/C5603AQH0v6vy9FntsQ/profile-displayphoto-shrink_800_800/0/1649421416921?e=1658361600&v=beta&t=DYl2yGpEIFYJZvUkmvdqpu7LS5p8UmNRIfFX2OmiwY8"
-  />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Louisiana Crawfish 🥛</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: brown;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid brown;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 15px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+
+      p {
+        line-height: 2;
+        font-size: 15px;
+        margin: 30px 0 20px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: brown;
+        color: beige;
+        font-size: 20px;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.6;
+        cursor: progress;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        background: pink;
+      }
+
+      .learn-more {
+        color: brown;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Nicole's Portfolio</h1>
+      <h2>Link to Youtube Intro </h2>
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C5603AQH0v6vy9FntsQ/profile-displayphoto-shrink_400_400/0/1649421416921?e=1665619200&v=beta&t=26jWQhkw_bm1-9kmPw07f2lVAhbnzOhHRfav7KPHHME"
+        alt="NicoleWu"
+      />
+      <p>
+        Crawfish Boil - mouthwatering crawfish recipes just like how it's done
+        in New Orleans. Made with live crawfish, Louisiana and Cajun seasonings,
+        corn, red potato and smoked sausage, so delicious!
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Crayfish"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="buy-button">Grab a Catelog from us!</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/nicole-w-8540b510/"
+          target="_blank"
+        >
+          Nicole Wu
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let flavour = prompt("What is your favorite crawfish flavour?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email with your favourite crawfish in " +
+            flavour
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
 </html>
